@@ -1,0 +1,21 @@
+#home_page__work-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 150px;
+    max-width: 1240px;
+    width: 100%;
+    background: rgba(18, 17, 19, 0.25);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(18, 17, 19, 0.3);
+}
+
+#home_page__work-title{
+    align-self: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+/* .home_page__work-gallery-card */
