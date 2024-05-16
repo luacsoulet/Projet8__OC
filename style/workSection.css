@@ -4,7 +4,6 @@
     flex-direction: column;
     margin-top: 150px;
     max-width: 1240px;
-    width: 100%;
     background: rgba(18, 17, 19, 0.25);
     border-radius: 5px;
     backdrop-filter: blur(5px);
@@ -15,7 +14,79 @@
 #home_page__work-title{
     align-self: center;
     font-size: 32px;
+    margin: 15px;
     font-weight: 400;
 }
 
-/* .home_page__work-gallery-card */
+#home_page__work-gallery{
+    display: flex;
+    padding: 0 25px;
+    gap: 20px;
+}
+
+.home_page__work-gallery-card{
+    height: fit-content;
+    width: fit-content;
+    max-width: 398px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+    background: rgba(18, 17, 19, 0.25);
+    border-radius:15px;
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(18, 17, 19, 0.3);
+}
+
+.home_page__work-gallery-card:hover{
+    transition: all 0.3s ease-in-out;
+    background: rgba(18, 17, 19, 0.645);
+}
+
+.home_page__work-gallery-card_image{
+    max-height: 202px;
+    max-width: 380px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.home_page__work-gallery-card_content{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    maring: 44px 0px;
+}
+
+.home_page__work-gallery-card_content-title{
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.home_page__work-gallery-card_content-tags-container{
+    display: flex;
+    gap: 11px;
+}
+
+.home_page__work-gallery-card_content-tags-container-tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: auto;
+    padding: 0 10px;
+    background-color: #899878;
+    border-radius: 10px;
+}
+
+.home_page__work-gallery-card_content-tags-container-tag-text{
+    color: #121113;
+    font-weight: bold;
+    font-size: 12.5px;
+}
