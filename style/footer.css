@@ -1,0 +1,65 @@
+#footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    margin-top: 150px;
+    gap: 25px;
+    background: rgba(18, 17, 19, 0.25);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-top: 2px solid rgba(222, 222, 222, 0.597);
+}
+
+#footer-container_buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-container_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(222, 222, 222, 0.1);
+}
+
+.footer-container_button:hover {
+    transition: all 0.3s ease-in-out;
+    background: #e5e5e5ab;
+}
+
+.githubLogo{
+    width: 40px;
+}
+
+.linkedinLogo, .mailLogo{
+    width: 35px;
+}
+
+@media(max-width: 576px){
+    #footer-container{
+        margin-top: 80px;
+    }
+
+    .footer-container_button{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .githubLogo{
+        width: 20px;
+    }
+    
+    .linkedinLogo, .mailLogo{
+        width: 20px;
+    }
+}
