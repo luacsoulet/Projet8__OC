@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/navBar.css">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="../style/carousel.css">
+    <link rel="stylesheet" href="../style/workPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Lucas Magalhaes Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div id="nav-container">
+            <div id="name-logo">
+                <p>Lucas Magalhaes</p>
+            </div>
+            <div id="links-container">
+                <a href="../index.html">
+                    <div class="link_container">
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a href="#home_page__work-gallery">
+                    <div class="link_container">
+                        <p>Work</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="workPage">
+            <div id="workPage_container">
+                <h1>Kasa</h1>
+                <div class="workPage_carousel">
+                    <div class="workPage_carousel-images">
+                        <img src="../asset/kasa-img/kasa-home.png" alt="Image de la page d'accueil">
+                        <img src="../asset/kasa-img/kasa-logement.png" alt="Image de la page de détail d'un logement">
+                        <img src="../asset/kasa-img/kasa-about.png" alt="Image de la page d'informations">
+                        <img src="../asset/kasa-img/kasa-error.png" alt="Image de la page d'erreur du site">
+                    </div>
+                    <div class="workPage_carousel-buttons">
+                        <button class="prev" onclick="prevSlide()"><</button>
+                        <button class="next" onclick="nextSlide()">></button>
+                    </div>
+                </div>
+                <div class="workPage_content_container">
+                    <h2 id="workPage_content-container-title">Description:</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra orci sagittis eu volutpat odio facilisis mauris. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Felis donec et odio pellentesque. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. At imperdiet dui accumsan sit. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Eget velit aliquet sagittis id. In iaculis nunc sed augue lacus viverra vitae congue eu. Eros donec ac odio tempor. Et leo duis ut diam quam nulla porttitor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra orci sagittis eu volutpat odio facilisis mauris. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Felis donec et odio pellentesque. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. At imperdiet dui accumsan sit. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Eget velit aliquet sagittis id. In iaculis nunc sed augue lacus viverra vitae congue eu. Eros donec ac odio tempor. Et leo duis ut diam quam nulla porttitor.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra orci sagittis eu volutpat odio facilisis mauris. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Felis donec et odio pellentesque. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. At imperdiet dui accumsan sit. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Eget velit aliquet sagittis id. In iaculis nunc sed augue lacus viverra vitae congue eu. Eros donec ac odio tempor. Et leo duis ut diam quam nulla porttitor.</p>
+                    <div class="workPage_content_container-tags">
+                        <div class="workPage_content_container-tag">JavaScript</div>
+                        <div class="workPage_content_container-tag">HTML</div>
+                        <div class="workPage_content_container-tag">CSS</div>
+                    </div>
+                    <div class="workPage_content_container-buttons">
+                        <a href="https://github.com/luacsoulet/Projet6_OC/tree/main"><div class="workPage_content_container-button"><img class="githubLogo" src="../asset/logo/github.svg" alt="Logo Github"></div></a>
+                        <a href="https://www.figma.com/file/qEno0LwL4ZLkWyeY59kxp1/Kasa-FR-(Archived-2)?type=design&node-id=4%3A5&mode=design&t=t9pthQiu1PCJAUQB-1"><div class="workPage_content_container-button"><img class="figmaLogo" src="../asset/logo/figma.svg" alt="Logo Figma"></div></a>
+                    </div>
+                </div>
+                <script src="../carousel.js"></script>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-container">
+            <div id="footer-container_buttons">
+                <a href="https://github.com/luacsoulet"><div class="footer-container_button"><img class="githubLogo" src="../asset/logo/github.svg" alt="Logo Github"></div></a>
+                <a href="mailto:lucasmagalhaes45200@gmail.com"><div class="footer-container_button"><img class="mailLogo" src="../asset/logo/mail.svg" alt="Logo Mail"></div></a>
+                <a href="https://www.linkedin.com/in/magalhaes-lucas/"><div class="footer-container_button"><img class="linkedinLogo" src="../asset/logo/linkedin.svg" alt="Logo Linkedin"></div></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
