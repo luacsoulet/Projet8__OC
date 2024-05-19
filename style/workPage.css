@@ -1,0 +1,170 @@
+#workPage_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 50px;
+    padding: 25px 45px;
+    background: rgba(18, 17, 19, 0.25);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(18, 17, 19, 0.3);
+}
+
+#workPage_container h1 {
+    font-size: 36px;
+}
+
+#workPage_content-container-title{
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.workPage_content_container{
+    max-width: 900px;
+}
+
+.workPage_content_container p{
+    margin-bottom: 10px;
+}
+
+.workPage_content_container-tags{
+    display: flex;
+    gap: 11px;
+    margin-top: 15px;
+}
+
+.workPage_content_container-tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: auto;
+    padding: 0 10px;
+    background-color: #899878;
+    border-radius: 5px;
+    color: #121113;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.workPage_content_container-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.workPage_content_container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(222, 222, 222, 0.1);
+}
+
+.workPage_content_container-button:hover {
+    transition: all 0.3s ease-in-out;
+    background: #e5e5e5ab;
+}
+
+.githubLogo{
+    width: 40px;
+}
+
+.figmaLogo{
+    margin-left: 15px;
+    width: 40px;
+}
+
+@media(max-width: 1024px){
+    #workPage_container{
+        padding: 25px 25px;
+    }
+
+    .workPage_content_container{
+        max-width: 700px;
+    }
+}
+
+@media(max-width: 768px){
+    #workPage_container{
+        padding: 25px 15px;
+        gap: 25px;
+    }
+
+    #workPage_container h1 {
+        font-size: 30px;
+    }
+
+    .workPage_content_container{
+        max-width: 500px;
+    }
+
+    #workPage_content-container-title{
+        margin-bottom: 10px;
+        font-size: 26px;
+    }
+
+    .workPage_content_container p{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 576px){
+    #workPage_container h1 {
+        gap: 10px;
+        font-size: 25px;
+    }
+
+    .workPage_content_container{
+        max-width: 350px;
+    }
+
+    #workPage_content-container-title{
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .workPage_content_container p{
+        font-size: 12.5px;
+    }
+
+    .workPage_content_container-tag{
+        padding: 0 10px;
+        font-size: 10px;
+    }
+
+    .workPage_content_container-buttons{
+        gap: 10px;
+    }
+    
+    .workPage_content_container-button{
+        width: 35px;
+        height: 35px;
+    }
+
+    .githubLogo{
+        width: 20px;
+    }
+    
+    .figmaLogo{
+        margin-left: 5px;
+        width: 20px;
+    }
+}
+
+@media(max-width: 468px){
+    .workPage_content_container{
+        max-width: 280px;
+    }
+}
