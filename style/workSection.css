@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 50px;
     width: 100%;
     max-width: 1240px;
     background: rgba(18, 17, 19, 0.25);
@@ -19,11 +19,57 @@
     border: 1px solid rgba(18, 17, 19, 0.3);
 }
 
-#home_page__work-title{
+#home_page__work-title, #home-page__skills-title{
     align-self: center;
     font-size: 32px;
     margin: 15px;
     font-weight: 400;
+}
+
+#home-page__skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    max-width: 1240px;
+    margin-top: 150px;
+    padding: 10px;
+    background: rgba(18, 17, 19, 0.25);
+    border-radius:5px;
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(18, 17, 19, 0.3);
+}
+
+.home-page__skills-gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    height: fit-content;
+    gap: 10px;
+}
+
+.home-page__skill-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    width: 125px;
+    background: rgba(30, 30, 30, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(222, 222, 222, 0.1);
+}
+
+.home-page__skill-container:hover {
+    transition: all 0.3s ease-in-out;
+    background: rgba(18, 17, 19, 0.645);
+}
+
+.home-page__skill-container img{
+    height: 100px;
+    object-fit: contain;
 }
 
 #home_page__work-gallery{
@@ -33,6 +79,7 @@
     padding: 0 25px 25px;
     gap: 20px;
 }
+
 
 .home_page__work-gallery-card{
     height: fit-content;
@@ -105,10 +152,23 @@ img{
     #home_page{
         margin: 0 10px;
     }
+
+    #home-page__skills-container, #home_page__work-container{
+        margin-top: 80px;
+    }
+    
     #home_page__work-container{
         max-width: 768px;
-        margin-top: 80px;
-    };
+    }
+
+    .home-page__skill-container{
+        height: 95px;
+        width: 95px;
+    }
+
+    .home-page__skill-container img{
+        height: 70px;
+    }
 
     #home_page__work-gallery{
         padding: 0 10px 25px;
