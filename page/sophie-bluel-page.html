@@ -29,7 +29,7 @@
                             <p>Home</p>
                         </div>
                     </a>
-                    <a href="#home_page__work-gallery">
+                    <a href="#" id="scrollToHomePageWorkSection">
                         <div class="link_container">
                             <p>Work</p>
                         </div>
@@ -55,9 +55,8 @@
                     </div>
                     <div class="workPage_content_container">
                         <h2 id="workPage_content-container-title">Description:</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra orci sagittis eu volutpat odio facilisis mauris. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Felis donec et odio pellentesque. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. At imperdiet dui accumsan sit. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Eget velit aliquet sagittis id. In iaculis nunc sed augue lacus viverra vitae congue eu. Eros donec ac odio tempor. Et leo duis ut diam quam nulla porttitor.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra orci sagittis eu volutpat odio facilisis mauris. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Felis donec et odio pellentesque. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. At imperdiet dui accumsan sit. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Eget velit aliquet sagittis id. In iaculis nunc sed augue lacus viverra vitae congue eu. Eros donec ac odio tempor. Et leo duis ut diam quam nulla porttitor.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra orci sagittis eu volutpat odio facilisis mauris. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Felis donec et odio pellentesque. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. At imperdiet dui accumsan sit. Tempus imperdiet nulla malesuada pellentesque elit eget gravida. Eget velit aliquet sagittis id. In iaculis nunc sed augue lacus viverra vitae congue eu. Eros donec ac odio tempor. Et leo duis ut diam quam nulla porttitor.</p>
+                        <p>Ce projet numéro 3 nommé Sophie Bluel est la création du front-end d'un site portfolio d'une architecte en intégrant un api pour les datas. Ce site permettra aux futurs clients d’apercevoir dans une galerie les projets déjà réalisés par Sophie Bluel. Mais aussi de permettre à Sophie Bluel d’ajouter ou de supprimer directement des projets qui seront affichés sur le site.</p>
+                        <p>Ce projet était à réaliser dans le cadre de la formation de développeur web sur la plate-forme OpenClassrooms.</p>
                         <div class="workPage_content_container-tags">
                             <div class="workPage_content_container-tag">JavaScript</div>
                             <div class="workPage_content_container-tag">HTML</div>
@@ -81,6 +80,13 @@
                 </div>
             </div>
         </footer>
+        <script>
+            document.getElementById('scrollToHomePageWorkSection').addEventListener('click', function(event) {
+                event.preventDefault();
+                // Redirige vers index.html avec un paramètre de requête
+                window.location.href = '../index.html?scrollTo=home_page__work-container';
+            });
+        </script>
     </div>
 </body>
 </html>
